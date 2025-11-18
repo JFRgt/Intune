@@ -1,0 +1,1 @@
+This contains examples of documentation related to Intune.
