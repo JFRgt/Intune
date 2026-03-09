@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1">
+  <dict>
+    <key>PayloadUUID</key>
+    <string>C9D0E1F2-G3H4-I5J6-K7L8-M9N0O1P2Q3R4</string>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadOrganization</key>
+    <string>SentinelOne</string>
+    <key>PayloadIdentifier</key>
+    <string>B8F1F9C1-AE66-4939-BEFD-8BB6F597E279</string>
+    <key>PayloadDisplayName</key>
+    <string>SentinelOne Removable System Extension</string>
+    <key>PayloadDescription</key>
+    <string/>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+    <key>PayloadEnabled</key>
+    <true/>
+    <key>PayloadRemovalDisallowed</key>
+    <true/>
+    <key>PayloadScope</key>
+    <string>System</string>
+    <key>PayloadContent</key>
+    <array>
+      <dict>
+        <key>PayloadUUID</key>
+        <string>S5T6U7V8-W9X0-Y1Z2-A3B4-C5D6E7F8G9H0</string>
+        <key>PayloadType</key>
+        <string>com.apple.system-extension-policy</string>
+        <key>PayloadOrganization</key>
+        <string>SentinelOne</string>
+        <key>PayloadIdentifier</key>
+        <string>2B453873-A72A-4389-908A-9BF11B98790F</string>
+        <key>PayloadDisplayName</key>
+        <string>System Extensions</string>
+        <key>PayloadDescription</key>
+        <string/>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>PayloadEnabled</key>
+        <true/>
+        <key>AllowUserOverrides</key>
+        <false/>
+        <key>AllowedTeamIdentifiers</key>
+        <array>
+          <string>4AYE5J54KN</string>
+        </array>
+        <key>RemovableSystemExtensions</key>
+        <dict>
+          <key>4AYE5J54KN</key>
+          <array>
+            <string>com.sentinelone.network-monitoring</string>
+          </array>
+        </dict>
+      </dict>
+    </array>
+  </dict>
+</plist>

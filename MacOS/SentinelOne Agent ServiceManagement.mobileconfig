@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>PayloadDescription</key>
+    <string>SentinelOne Service Management - Managed Login Items</string>
+    <key>PayloadDisplayName</key>
+    <string>SentinelOne - Service Management</string>
+    <key>PayloadIdentifier</key>
+    <string>com.sentinelone.serviceManagement.profile</string>
+    <key>PayloadOrganization</key>
+    <string>SentinelOne</string>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>B7D4F1E2-5A8C-4G9H-1I2J-3K4L5M6N7O8P</string>
+    <key>PayloadVersion</key>    
+    <integer>1</integer>
+    <key>PayloadRemovalDisallowed</key>
+    <true/>
+    <key>PayloadContent</key>
+    <array>
+        <dict>
+            <key>PayloadType</key>
+            <string>com.apple.servicemanagement</string>
+            <key>PayloadIdentifier</key>
+            <string>com.sentinelone.serviceManagement</string>
+            <key>PayloadUUID</key>
+            <string>9F2E3D4C-5B6A-7H8I-9J0K-1L2M3N4O5P6Q</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>Rules</key>
+            <array>
+                <dict>
+                    <key>RuleType</key>
+                    <string>LabelPrefix</string>
+                    <key>RuleValue</key>
+                    <string>com.sentinelone.</string>
+                    <key>Comment</key>
+                    <string>Prevent removal of SentinelOne Launch Agents and Launch Daemons</string>
+                </dict>
+                <dict>
+                    <key>RuleType</key>
+                    <string>BundleIdentifierPrefix</string>
+                    <key>RuleValue</key>
+                    <string>com.sentinelone.</string>
+                    <key>Comment</key>
+                    <string>Prevent removal of SentinelOne Launch Agents and Launch Daemons</string>
+                </dict>
+            </array>
+        </dict>
+    </array>
+</dict>
+</plist>
