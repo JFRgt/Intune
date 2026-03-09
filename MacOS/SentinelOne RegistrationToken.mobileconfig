@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"><plist version="1.0">
+ <dict>
+ <key>PayloadContent</key>
+ <array>
+ <!-- SentinelOne Site Token -->
+ <dict>
+ <key>PayloadType</key>
+ <string>com.sentinelone.registration-token</string>
+ <key>PayloadIdentifier</key>
+ <string>com.sentinelone.siteToken</string>
+ <key>PayloadUUID</key>
+ <string>75295ADD-5A6A-4C36-A300-B1F6DEFD5BD4</string>
+ <key>S1InstallRegistrationToken</key>
+ <string>123456890</string> <!-- This is your Unique Site Token, replace 1234567890 with it-->
+   </dict>
+    </array>
+   
+   <key>PayloadScope</key>
+ <string>System</string>
+ <key>PayloadType</key>
+ <string>Configuration</string>
+ <key>PayloadRemovalDisallowed</key>
+ <true />
+ <key>PayloadUUID</key>
+ <string>980B94AD-03EA-411C-9218-AC6A4812448F</string>
+ <key>PayloadIdentifier</key>
+ <string>com.sentinelone.S1ProfileRegistration</string>
+ <key>PayloadDisplayName</key>
+ <string>SentinelOne Agent registration key</string>
+ <key>PayloadOrganization</key>
+ <string>SentinelOne</string>
+ <key>PayloadDescription</key>
+ <string>Payload Designed to Configure the SentinelOne Agent registration for macOS</string>
+ <key>PayloadVersion</key>
+ <integer>1</integer>
+ </dict>
+</plist>
