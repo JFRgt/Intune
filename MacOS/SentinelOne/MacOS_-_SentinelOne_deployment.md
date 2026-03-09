@@ -4,7 +4,7 @@ The configuration is based on an initial document provided by SentinelOne regard
 
 But that one gave me some headaches, as it contains a concatenated version of the configuration file that was always failing. So, I had to make my AI friends rewrite the structure a bit and split it up into several parts.
 
-I am not saying this is the ultimate SentinelOne deployment doc for MacOS on Intune, I just documenting what worked for me.
+I am not saying this is the ultimate SentinelOne deployment doc for MacOS on Intune, I'm just documenting what worked for me.
 
 Two main processes occur simultaneously during automated deployment, eliminating the need for end-users to interact with or disable SentinelOne Agent Services throughout installation.
 
