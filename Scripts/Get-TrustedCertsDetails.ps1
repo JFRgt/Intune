@@ -16,6 +16,16 @@
 #>
 
 
+[CmdletBinding()]
+param(
+    [Parameter(Mandatory = $true)]
+    [string]$TenantId,
+
+    [Parameter(Mandatory = $true)]
+    [string]$ClientId
+)
+
+
 # Import MgGraph Modules
  
 If (!(Get-module "Microsoft.Graph.Authentication")) {
@@ -34,21 +44,12 @@ If (!(Get-module "Microsoft.Graph.Beta.Devices.CorporateManagement")) {
  
 If (!(Get-module "Microsoft.Graph.Groups")) {
     Import-Module Microsoft.Graph.Groups
-    Write-host -ForegroundColor White "Importing-Module MicrosoftGraph.Groups"
+    Write-host -ForegroundColor White "Importing-Module Microsoft.Graph.Groups"
 }else {
     Write-Host -ForegroundColor Green "Module Microsoft.Graph.Groups already imported"
 }
 
 ##### Required Parameters
-
-[CmdletBinding()]
-param(
-    [Parameter(Mandatory = $true)]
-    [string]$TenantId,
-
-    [Parameter(Mandatory = $true)]
-    [string]$ClientId
-)
 
 # Connect to Graph
 Connect-MgGraph `
@@ -102,7 +103,7 @@ foreach ($TrustedProfile in $TrustedCertProfiles) {
     }
 }
  
-$report | Select-Object ProfileName, Filename, Issuer, NotBefore, NotAfter | Format-Table -AutoSize
+$report | Select-Object ProfileName, Filename, NotBefore, NotAfter, Issuer | Format-Table -AutoSize
  
 # Disconnecting
 $answer = (Read-Host "Would you like to disconnect? (Y/N) [Default: N]").Trim().ToUpper()
