@@ -108,4 +108,11 @@ $report | Select-Object ProfileName, Filename, NotBefore, NotAfter, Issuer | For
 # Disconnecting
 $answer = (Read-Host "Would you like to disconnect? (Y/N) [Default: N]").Trim().ToUpper()
 $answer = if ($answer -in @("Y", "")) { "Y" } else { "N" }
- 
+
+# Actually execute the disconnection based on the answer
+if ($answer -eq "Y") {
+    Disconnect-MgGraph
+    Write-Host -ForegroundColor Yellow "Disconnected from Microsoft Graph."
+} else {
+    Write-Host -ForegroundColor Green "Still connected to Microsoft Graph."
+}
