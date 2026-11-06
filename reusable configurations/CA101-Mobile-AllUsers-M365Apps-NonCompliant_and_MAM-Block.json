@@ -1,0 +1,53 @@
+{
+  "displayName": "CA101-Mobile-AllUsers-M365Apps-NonCompliant_and_MAM-Block",
+  "state": "enabled",
+  "conditions": {
+    "userRiskLevels": [],
+    "signInRiskLevels": [],
+    "clientAppTypes": [
+      "all"
+    ],
+    "applications": {
+      "includeApplications": [
+        "Office365"
+      ],
+      "excludeApplications": [],
+      "includeUserActions": [],
+      "includeAuthenticationContextClassReferences": []
+    },
+    "users": {
+      "includeUsers": [
+        "All"
+      ],
+      "excludeUsers": [],
+      "includeGroups": [],
+      "excludeGroups": [],
+      "includeRoles": [],
+      "excludeRoles": []
+    },
+    "platforms": {
+      "includePlatforms": [
+        "android",
+        "iOS"
+      ],
+      "excludePlatforms": [
+        "windows",
+        "windowsPhone",
+        "macOS",
+        "linux"
+      ]
+    },
+    "devices": {
+      "deviceFilter": {
+        "mode": "include",
+        "rule": "device.isCompliant -eq False"
+      }
+    }
+  },
+  "grantControls": {
+    "operator": "OR",
+    "builtInControls": [
+      "block"
+    ]
+  }
+}

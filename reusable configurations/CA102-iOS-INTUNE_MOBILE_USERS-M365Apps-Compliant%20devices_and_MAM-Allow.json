@@ -1,0 +1,53 @@
+{
+  "displayName": "CA102-iOS-INTUNE_MOBILE_USERS-M365Apps-Compliant devices_and_MAM-Allow",
+  "state": "enabled",
+  "conditions": {
+    "userRiskLevels": [],
+    "signInRiskLevels": [],
+    "clientAppTypes": [
+      "all"
+    ],
+    "applications": {
+      "includeApplications": [
+        "Office365"
+      ],
+      "excludeApplications": [
+        "00000002-0000-0ff1-ce00-000000000000"
+      ],
+      "includeUserActions": [],
+      "includeAuthenticationContextClassReferences": []
+    },
+    "users": {
+      "includeUsers": ["All"],
+      "excludeUsers": [],
+      "includeGroups": [],
+      "excludeGroups": [],
+      "includeRoles": [],
+      "excludeRoles": []
+    },
+    "platforms": {
+      "includePlatforms": [
+        "iOS"
+      ],
+      "excludePlatforms": [
+        "android",
+        "windows",
+        "windowsPhone",
+        "macOS",
+        "linux"
+      ]
+    },
+    "devices": {
+      "deviceFilter": {
+        "mode": "include",
+        "rule": "device.isCompliant -eq True"
+      }
+    }
+  },
+  "grantControls": {
+    "operator": "OR",
+    "builtInControls": [
+      "compliantApplication"
+    ]
+  }
+}

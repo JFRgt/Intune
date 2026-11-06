@@ -1,0 +1,51 @@
+{
+  "displayName": "CA201-Windows-EdgeMAM-Browser-Allow",
+  "state": "enabled",
+  "conditions": {
+    "userRiskLevels": [],
+    "signInRiskLevels": [],
+    "clientAppTypes": [
+      "browser"
+    ],
+    "applications": {
+      "includeApplications": [
+        "Office365"
+      ],
+      "excludeApplications": [],
+      "includeUserActions": [],
+      "includeAuthenticationContextClassReferences": []
+    },
+    "users": {
+      "includeUsers": [],
+      "excludeUsers": [],
+      "includeGroups": [],
+      "excludeGroups": [],
+      "includeRoles": [],
+      "excludeRoles": []
+    },
+    "platforms": {
+      "includePlatforms": [
+        "windows"
+      ],
+      "excludePlatforms": [
+        "android",
+        "iOS",
+        "windowsPhone",
+        "macOS",
+        "linux"
+      ]
+    },
+    "devices": {
+      "deviceFilter": {
+        "mode": "include",
+        "rule": "device.trustType -eq \"Workplace\""
+      }
+    }
+  },
+  "grantControls": {
+    "operator": "OR",
+    "builtInControls": [
+      "compliantApplication"
+    ]
+  }
+}
