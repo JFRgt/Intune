@@ -1,0 +1,93 @@
+{
+  "@odata.type": "#microsoft.graph.windows10CustomConfiguration",
+  "description": "Swift Win11 Intune Workstation v2.0 (based on CIS Win11 Intune v3.0.0)\nCIS recommended settings that are Custom Intune Settings.",
+  "deviceManagementApplicabilityRuleDeviceMode": null,
+  "deviceManagementApplicabilityRuleOsEdition": null,
+  "deviceManagementApplicabilityRuleOsVersion": null,
+  "displayName": "Win-CP-CUST-D-CIS-Device-Security-Baseline-Settings-v2.0",
+  "omaSettings": [
+    {
+      "@odata.type": "#microsoft.graph.omaSettingInteger",
+      "description": "Manages a Windows app's ability to share data between users who have installed the app.",
+      "displayName": "Allow a Windows app to share application data between users",
+      "isEncrypted": false,
+      "isReadOnly": false,
+      "omaUri": "./Device/Vendor/MSFT/Policy/Config/ApplicationManagement/AllowSharedUserAppData",
+      "secretReferenceValueId": null,
+      "value": 0
+    },
+    {
+      "@odata.type": "#microsoft.graph.omaSettingInteger",
+      "description": "This policy setting determines whether users can enable the following WLAN settings: \"Connect to suggested open hotspots,\" \"Connect to networks shared by my contacts,\" and \"Enable paid services\"",
+      "displayName": "Allow Windows to automatically connect to suggested open hotspots, to networks shared by contacts, and to hotspots offering paid services",
+      "isEncrypted": false,
+      "isReadOnly": false,
+      "omaUri": "./Device/Vendor/MSFT/Policy/Config/Wifi/AllowAutoConnectToWiFiSenseHotspots",
+      "secretReferenceValueId": null,
+      "value": 0
+    },
+    {
+      "@odata.type": "#microsoft.graph.omaSettingInteger",
+      "description": "This policy setting controls whether the Connected User Experience and Telemetry  service can automatically use an authenticated proxy to send data back to Microsoft.",
+      "displayName": "Configure Authenticated Proxy usage for the Connected User Experience and Telemetry service",
+      "isEncrypted": false,
+      "isReadOnly": false,
+      "omaUri": "./Device/Vendor/MSFT/Policy/Config/System/DisableEnterpriseAuthProxy",
+      "secretReferenceValueId": null,
+      "value": 1
+    },
+    {
+      "@odata.type": "#microsoft.graph.omaSettingInteger",
+      "description": "This policy is intended to provide additional security against external DMA-capable devices.",
+      "displayName": "Enumeration policy for external devices incompatible with Kernel DMA Protection",
+      "isEncrypted": false,
+      "isReadOnly": false,
+      "omaUri": "./Device/Vendor/MSFT/Policy/Config/DmaGuard/DeviceEnumerationPolicy",
+      "secretReferenceValueId": null,
+      "value": 0
+    },
+    {
+      "@odata.type": "#microsoft.graph.omaSettingInteger",
+      "description": "This setting manages non-Administrator users' ability to install Windows app packages.",
+      "displayName": "Prevent non-admin users from installing packaged Windows apps",
+      "isEncrypted": false,
+      "isReadOnly": false,
+      "omaUri": "./Device/Vendor/MSFT/Policy/Config/ApplicationManagement/BlockNonAdminUserInstall",
+      "secretReferenceValueId": null,
+      "value": 0
+    },
+    {
+      "@odata.type": "#microsoft.graph.omaSettingInteger",
+      "description": "This policy setting turns off experiences that help consumers make the most of their devices and Microsoft account.",
+      "displayName": "Turn off Microsoft consumer experiences",
+      "isEncrypted": false,
+      "isReadOnly": false,
+      "omaUri": "./Device/Vendor/MSFT/Policy/Config/Experience/AllowWindowsConsumerFeatures",
+      "secretReferenceValueId": null,
+      "value": 0
+    },
+    {
+      "@odata.type": "#microsoft.graph.omaSettingInteger",
+      "description": "This policy setting blocks applications from using the network to send notifications to update tiles, tile badges, toast, or raw notifications.",
+      "displayName": "Turn off notifications network usage",
+      "isEncrypted": false,
+      "isReadOnly": false,
+      "omaUri": "./Device/Vendor/MSFT/Policy/Config/Notifications/DisallowCloudNotification",
+      "secretReferenceValueId": null,
+      "value": 1
+    },
+    {
+      "@odata.type": "#microsoft.graph.omaSettingInteger",
+      "description": "This policy setting turns off the location feature for the computer.",
+      "displayName": "Turn off location",
+      "isEncrypted": false,
+      "isReadOnly": false,
+      "omaUri": "./Device/Vendor/MSFT/Policy/Config/System/AllowLocation",
+      "secretReferenceValueId": null,
+      "value": 0
+    }
+  ],
+  "roleScopeTagIds": [
+    "0"
+  ]
+}
